@@ -1,0 +1,5 @@
+1. Vite로 리액트 생성 명령어
+=> npm create vite@latest
+
+2. 일반 리액트 생성 명령어
+=> npx create-react-app file-name

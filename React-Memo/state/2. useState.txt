@@ -1,0 +1,8 @@
+1. const [state, setState] = useState(data);
+1-1. state는 변경될 데이터 또는 요소입니다.
+1-2. setState()를 호출하면 state를 선언한 컴포넌트를 재실행합니다.
+1-3. 재실행된 컴포넌트는 state를 변경하고 UI를 변경합니다.
+1-4. state, setState는 내부 상태 저장소의 슬롯을 함께 공유합니다. (강하게 연결되어 있다.)
+1-5. 즉, setState는 컴포넌트 재실행을 일으키는데 이 떄 setState(para) 인자만 state에 영향을 
+ 주기 떄문에 둘은 강력히 연결된 상태입니다.
+
