@@ -1,5 +1,7 @@
 1. Vite로 리액트 생성 명령어
 => npm create vite@latest
+=> 이 떄 /를 사용하면 안된다. / 기준으로 각 파일이 만들어진다.
+=> -를 사용하자
 
 2. 일반 리액트 생성 명령어
 => npx create-react-app file-name
