@@ -1,0 +1,18 @@
+1. React 컴포넌트에 .css 파일을 추가하면 head 태그 내부에 style 태그 내에서 CSS가 정의됩니다.
+=> 컴포넌트 내부에 import './style/header.css' 이렇게 가져오면 자동으로 1이 적용됩니다.
+=> 1 방식의 가장 큰 단점은 해당 컴포넌트 내부에 CSS가 스코프되지 않는다는 점입니다.
+(즉, 해당 컴포넌트에서 import한 css 구문은 다른 컴포넌트에게 적용될 수 있습니다.)
+
+
+2. React 컴포넌트 - inline style plus
+=> React 컴포넌트 JSX 요소에 style props가 존재합니다. 이를 통해 인라인 방식으로 css 추가할 수 있습니다.
+=> style = {{background : 'red'}} -> style은 동적 값으로 객체를 받고 key-value로 css를 설정합니다.
+=> 2의 방식으로 CSS를 작성하면 해당 요소에만 영향을 미치지만 js와 css 코드 식별이 어렵고 코드 길이 길어집니다.
+=> style props는 JS 동적 값을 받기 떄문에 조건부로 UI에 영향을 끼칠 수 있습니다.
+(style = {{backgroundColor : isValid ? 'green' : 'red'}})
+
+3. React 컴포넌트 - cssName.module.css
+3-1. 컴포넌트에 적용할 CSS 파일의 이름을 cssName.module.css로 정의합니다. (이 떄 class로 스타일을 적용합니다.)
+3-2. 컴포넌트에서 import styles from './cssGroup/cssName.module.css'로 가져옵니다.
+3-3. JSX에서 css를 적용하기 위해 <div className={styles.header}/>로 정의합니다.
+3-4. 이렇게 적용된 css들은 해당 스코프에만 국한됩니다.
