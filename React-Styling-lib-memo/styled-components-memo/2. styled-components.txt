@@ -1,0 +1,17 @@
+1. styled-components 사용법
+1-1. 사용할 컴포넌트에서 import {styled} from 'styled-components';
+1-2. 컴포넌트를 벗어난 구역에서 
+ const Container = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+ `; 정의하빈다.
+1-3. 사용할 컴포넌트의 JSX에서 
+<Container>
+ <div>Hello<div/>
+ <div>World<div/>
+<Container/>
+
+
+2. Styled Components를 적용하면 html의 head 태그의 style 태그에 CSS가 적용됩니다.
