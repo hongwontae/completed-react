@@ -1,0 +1,26 @@
+1. tailwindcss 사용법
+=> className에 이미 규정된 css class를 사용하여 적용하면 됩니다.
+=> <div className="bg-red-400"/>..
+
+
+2. tailwind layer
+2-1. tailwind는 CSS를 계층 구조로 나누어 관리합니다.
+2-2. base layer => 브라우저 기본 스타일을 재정의하는 곳입니다.
+2-3. components => 재사용 가능한 컴포넌트 스타일을 정의합니다.
+2-4. utilities => 일반 클래스를 정의합니다.
+2-5. index.css에서 @layer utilities {
+    .color-test {
+        color : blue
+    }
+} 를 정의하여 사용합니다.
+2-6. layer는 2-2부터 순서대로 처리하지만 우선순위는 utilities가 제일 높습니다.
+
+
+3. @apply
+3-1. 여러가지 유틸리티 클래스를 묶어서 한번에 표현할 수 있게 해주는 데코레이터입니다.
+3-2. 주로 컴포넌트 layer에서 사용됩니다.
+3-3. @layer components {
+    .badge {
+        @apply px-1 py-2 color-red-400..
+    }
+}

@@ -1,0 +1,11 @@
+1. JSX에 tailwind 적용하기
+1-1. JSX 태그에 className에 사전에 정의한 여러 클래스들을 정의합니다.
+
+
+2. 동적 tailwind
+2-1. className에 템플릿 리터럴을 적용해서 삼항 연산자를 적용하여 동적으로 CSS를 설정할 수 있습니다.
+
+
+3. tailwind etc
+3-1. className이 길어서 가독성이 떨어지는 경우 일반 변수로 빼서 적용시킬 수 있습니다.
+3-2. tailwind는 일반 css 파일과 연동될 수 있습니다.

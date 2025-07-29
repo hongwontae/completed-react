@@ -1,0 +1,13 @@
+1. tailwind 설치방법
+1-1. npm install tailwindcss @tailwindcss/vite
+1-2. vite.config.js 파일에서 import tailwindcss from '@tailwindcss/vite'
+=> plugins 배열에 plugins : [tailwind()]
+1-3. index.css -> @import "tailwindcss"
+** 확인 완료 **
+
+2. tailwind 내부 구조
+2-1. tailwind을 JSX className에 사용합니다.
+2-2. 사용한 className만 따로 모아서 하나의 css file을 생성합니다.
+=> html head 태그에 link 태그는 2-2를 가르킵니다.
+2-3. React를 브라우저에 가져올 떄 2-2 파일도 같이 가져갑니다.
+
